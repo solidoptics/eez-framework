@@ -97,7 +97,7 @@ extern "C" {
 #endif
 
 #if !defined(RENESAS) && !defined(ESP32) && !defined(ESP_PLATFORM) && defined(__cplusplus) && __cplusplus >= 202002L
-using utf8_int8_t = char8_t; /* Introduced in C++20 */
+using utf8_int8_t = char; /* Introduced in C++20 */
 #else
 typedef char utf8_int8_t;
 #endif
